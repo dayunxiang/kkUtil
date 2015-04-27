@@ -1,0 +1,1 @@
+{"host":"114.215.157.181","port":3306,"username":"root","pwd":"jkyf9713at","database":"db_bksh","table_s":"t_tth_tsb","table_d":"t_tth_tsb_count","timefiled":"time","interval":60,"data":[{"field":"a_tsbvgdd4","type":2},{"field":"a_tsbvgdd3","type":2},{"field":"a_tsbvgdd2","type":2},{"field":"a_tsbvgdd1","type":2},{"field":"a_outll","type":0}]}

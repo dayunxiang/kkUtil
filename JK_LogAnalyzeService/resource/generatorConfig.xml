@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration >
+<classPathEntry location="G:/workspace_MyEclipse_2014/JK_LogAnalyzeService/lib/mysql-connector-java-5.1.32.jar" />
+  <context id="context1" defaultModelType="flat" targetRuntime="MyBatis3">
+  <property name="autoDelimitKeywords" value="true"/>
+  		<property name="beginningDelimiter" value="`"/>
+        <property name="endingDelimiter" value="`"/>
+        <plugin type="org.mybatis.generator.plugins.CaseInsensitiveLikePlugin"/>
+        <plugin type="org.mybatis.generator.plugins.MapperConfigPlugin">
+            <property name="targetPackage" value="dao"/>
+            <property name="targetProject" value="JK_LogAnalyzeService/src"/>
+        </plugin>
+    <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://114.215.157.181:3306/db_system?characterEncoding=UTF-8" userId="root" password="jkyf9713at" />
+    <javaModelGenerator targetPackage="model.sys" targetProject="JK_LogAnalyzeService/src"> 
+    	<property name="enableSubPackages" value="true" />
+            <property name="trimStrings" value="true" />
+    </javaModelGenerator>
+    <sqlMapGenerator targetPackage="dao.sys" targetProject="JK_LogAnalyzeService/src" /> 
+    <javaClientGenerator targetPackage="dao.sys" targetProject="JK_LogAnalyzeService/src" type="XMLMAPPER" /> 
+     <table schema="" tableName="t_factory" domainObjectName="T_factory">
+    	<property name="useActualColumnNames" value="true" />
+    	<generatedKey column="factory_id" sqlStatement="MYSQL" identity="true" type="post"/>
+    </table>
+  </context>
+</generatorConfiguration>
